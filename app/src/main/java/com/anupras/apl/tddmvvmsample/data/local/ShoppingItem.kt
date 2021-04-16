@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
  * Created by Anamika Painuly on 16/03/21.
  */
 
-@Entity(tableName = "shopping_items ")
+@Entity(tableName = "shopping_items")
 data class ShoppingItem(
     var name: String,
     var amount: Int,

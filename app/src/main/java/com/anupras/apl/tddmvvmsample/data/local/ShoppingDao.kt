@@ -23,10 +23,10 @@ interface ShoppingDao {
 
     //We don't make it suspend because this function return live data object and live data is asynchronous by default
     //Live data + Room
-    @Query("SELECT * FROM `shopping_items `")
+    @Query("SELECT * FROM `shopping_items`")
     fun observeAllShoppingItem():LiveData<List<ShoppingItem>>
 
-    @Query("SELECT SUM(price * amount) FROM `shopping_items `")
+    @Query("SELECT SUM(price * amount) FROM `shopping_items`")
     fun observeTotalPrice(): LiveData<Float>
 
 }
