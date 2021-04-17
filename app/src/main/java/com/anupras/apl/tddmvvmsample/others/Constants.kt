@@ -1,4 +1,4 @@
-package com.anupras.apl.tddmvvmsample
+package com.anupras.apl.tddmvvmsample.others
 
 /**
  * Created by Anamika Painuly on 17/04/21.

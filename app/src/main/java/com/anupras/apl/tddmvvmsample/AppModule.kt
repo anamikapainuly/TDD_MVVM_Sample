@@ -2,9 +2,9 @@ package com.anupras.apl.tddmvvmsample
 
 import android.content.Context
 import androidx.room.Room
-import com.anupras.apl.tddmvvmsample.Constants.BASE_URL
-import com.anupras.apl.tddmvvmsample.Constants.DATABASE_NAME
-import com.anupras.apl.tddmvvmsample.data.PixabayAPI
+import com.anupras.apl.tddmvvmsample.others.Constants.BASE_URL
+import com.anupras.apl.tddmvvmsample.others.Constants.DATABASE_NAME
+import com.anupras.apl.tddmvvmsample.data.remote.PixabayAPI
 import com.anupras.apl.tddmvvmsample.data.local.ShoppingItemDatabase
 import dagger.Module
 import dagger.Provides

@@ -1,4 +1,4 @@
-package com.anupras.apl.tddmvvmsample.data
+package com.anupras.apl.tddmvvmsample.data.remote
 
 import com.anupras.apl.tddmvvmsample.BuildConfig
 import com.anupras.apl.tddmvvmsample.data.remote.response.ImageResponse
