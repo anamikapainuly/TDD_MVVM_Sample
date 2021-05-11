@@ -8,7 +8,7 @@ import com.bumptech.glide.load.engine.Resource
 /**
  * Created by Anamika Painuly on 18/04/21.
  */
-interface ShoppingRepository {
+interface   ShoppingRepository {
     suspend fun insertShoppingItem(shoppingItem: ShoppingItem)
 
     suspend fun deleteShoppingItem(shoppingItem: ShoppingItem)

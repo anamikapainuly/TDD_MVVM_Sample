@@ -1,4 +1,4 @@
-package com.anupras.apl.tddmvvmsample
+package com.anupras.apl.tddmvvmsample.di
 
 import android.content.Context
 import androidx.room.Room
@@ -20,7 +20,7 @@ import javax.inject.Singleton
  */
 @Module
 @InstallIn (ApplicationComponent::class)
-object AppModule {
+object  AppModule {
 
     @Singleton
     @Provides

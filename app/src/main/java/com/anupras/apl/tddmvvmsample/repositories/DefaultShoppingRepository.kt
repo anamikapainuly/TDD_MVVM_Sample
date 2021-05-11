@@ -13,7 +13,7 @@ import javax.inject.Inject
 /**
  * Created by Anamika Painuly on 18/04/21.
  */
-class DafaultShoppingRepository @Inject constructor(
+class DefaultShoppingRepository @Inject constructor(
     private val shoppingDao: ShoppingDao,
     private val pixabayAPI: PixabayAPI
 ) : ShoppingRepository {
