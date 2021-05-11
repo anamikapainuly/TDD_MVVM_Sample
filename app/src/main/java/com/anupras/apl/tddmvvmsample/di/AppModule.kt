@@ -2,10 +2,12 @@ package com.anupras.apl.tddmvvmsample.di
 
 import android.content.Context
 import androidx.room.Room
+import com.anupras.apl.tddmvvmsample.data.local.ShoppingDao
 import com.anupras.apl.tddmvvmsample.others.Constants.BASE_URL
 import com.anupras.apl.tddmvvmsample.others.Constants.DATABASE_NAME
 import com.anupras.apl.tddmvvmsample.data.remote.PixabayAPI
 import com.anupras.apl.tddmvvmsample.data.local.ShoppingItemDatabase
+import com.anupras.apl.tddmvvmsample.repositories.DefaultShoppingRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,6 +29,13 @@ object  AppModule {
     fun provideShoppingItemDatabase(
         @ApplicationContext context: Context
     ) = Room.databaseBuilder(context, ShoppingItemDatabase::class.java, DATABASE_NAME).build()
+
+    @Singleton
+    @Provides
+    fun provideDefaultShoppingRepo(
+        dao: ShoppingDao,
+        api: PixabayAPI
+    ) = DefaultShoppingRepository(dao, api)
 
     @Singleton
     @Provides
