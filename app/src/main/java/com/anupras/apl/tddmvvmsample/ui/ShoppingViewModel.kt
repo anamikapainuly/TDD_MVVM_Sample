@@ -12,4 +12,5 @@ class ShoppingViewModel @ViewModelInject constructor(
 private val repository: ShoppingRepository
 ) : ViewModel() {
 
+
 }
