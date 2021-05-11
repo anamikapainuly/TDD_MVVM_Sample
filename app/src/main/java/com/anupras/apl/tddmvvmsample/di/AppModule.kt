@@ -8,6 +8,7 @@ import com.anupras.apl.tddmvvmsample.others.Constants.DATABASE_NAME
 import com.anupras.apl.tddmvvmsample.data.remote.PixabayAPI
 import com.anupras.apl.tddmvvmsample.data.local.ShoppingItemDatabase
 import com.anupras.apl.tddmvvmsample.repositories.DefaultShoppingRepository
+import com.anupras.apl.tddmvvmsample.repositories.ShoppingRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,7 +36,7 @@ object  AppModule {
     fun provideDefaultShoppingRepo(
         dao: ShoppingDao,
         api: PixabayAPI
-    ) = DefaultShoppingRepository(dao, api)
+    ) = DefaultShoppingRepository(dao, api) as ShoppingRepository
 
     @Singleton
     @Provides
